@@ -2,16 +2,25 @@ package com.adventureincorporated.game;
 
 import com.adventureincorporated.location.Location;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import lombok.extern.java.Log;
 
 
-@AllArgsConstructor
+@Setter
+@Getter
+@ToString
 @Log
 public class Game 
 {
-    public Player player;
-    public Location location;
+    private Player player;
+    private Location location;
+    private GameIO io;
+
+    public Game(){
+        this.io = new GameIO();
+    }
 
     // Oyun logici nasil isleyecek ?
     public void start(){

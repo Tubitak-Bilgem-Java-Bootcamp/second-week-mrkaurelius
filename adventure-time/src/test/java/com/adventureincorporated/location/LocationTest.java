@@ -2,6 +2,8 @@ package com.adventureincorporated.location;
 
 import static org.junit.Assert.assertTrue;
 
+import com.adventureincorporated.game.*;
+
 import org.junit.Test;
 
 /**
@@ -15,8 +17,9 @@ public class LocationTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        // Player p = new Player();
-        // SafeHouse sh = new SafeHouse(p, "deneme");
+        Player p = new Player();
+        SafeHouse sh = new SafeHouse();
+        // System.out.println(sh.toString());
 
         assertTrue( true );
     }

@@ -1,13 +1,21 @@
 package com.adventureincorporated.location;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@AllArgsConstructor
+@Setter
+@Getter
+@ToString
 public class SafeHouse extends NormalLocation {
+    public final String name = "Safe House"; 
 
+    /**
+     * Location properity health recovery
+     * 
+     */
     @Override
     public void onLocation() {
         
     }
-
 }

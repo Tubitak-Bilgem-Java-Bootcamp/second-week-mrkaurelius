@@ -6,8 +6,7 @@ import lombok.Data;
 public class Inventory {
     public boolean water;
     public boolean food;
-    // Bu typo olabilir mi ?
-    public boolean firewoord;
+    public boolean wood;
     public String weaponName;
     public String armorName;
     public int weaponDamage;
